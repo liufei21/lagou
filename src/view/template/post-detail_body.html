@@ -1,0 +1,23 @@
+<!--职位详情内容自定义指令-->
+<div class="post-detail_body">
+    <div class="main">
+        <div>
+            <p>{{obj.job}}:<span>{{obj.salaryName}}</span></p>
+            <p >{{obj.cityName}}:{{obj.experience}}{{obj.education}}</p>
+            <p >{{obj.benefit}}</p>
+        </div>
+        <div ui-sref="comdetail({id:obj.id})">
+            <p><img ng-src="{{obj.imageUrl}}" ></p>
+            <p>
+                <span>{{obj.companyName}}</span>
+                <span>{{obj.industryName}}/A轮/{{obj.scaleName}}</span>
+            </p>
+        </div>
+        <div>
+            <p>{{obj.description}}</p>
+        </div>
+        <div>
+            <button ng-click="cut()">{{resume}}</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<!--公司职位详情自定义指令-->
+<div class="com-detail_body">
+    <div class="main">
+        <div class="content">
+            <p><img ng-src="{{obj1.imageUrl}}" ></p>
+            <p>
+                <span>{{obj1.companyName}}</span>
+                <span>{{obj1.industryName}}/{{obj1.state}}/{{obj1.scaleName}}</span>
+            </p>
+        </div>
+        <div class="classify">
+            <h2>职位分类</h2>
+            <button ng-repeat="item in date" ng-click="cut($index)">{{item.name}}</button>
+            <div ng-repeat="i in date" ng-show="$index==show" >
+                <p ng-repeat="x in i.positionList" >
+                    <span>{{x.name}}</span>
+                    <span>{{x.createdDate}}</span>
+                    <span>{{x.salary}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

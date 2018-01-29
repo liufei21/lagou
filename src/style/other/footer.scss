@@ -1,0 +1,26 @@
+//整体底部页面
+.footer {
+  width:$w;
+  height:rem(85);
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  ul{
+    width: $w;
+    height: $w;
+    display: flex;
+    li{
+      width: 33.3333%;
+      height: $w;
+      font-size:rem(32);
+      text-align: center;
+      line-height: rem(85);
+    }
+  }
+  .active{
+    background: #00b38a;
+    color:#fff;
+  }
+}

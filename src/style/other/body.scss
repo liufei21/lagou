@@ -1,0 +1,283 @@
+//搜索,职位页面的主体数据渲染部分
+.post-search_body{
+  width: $w;
+  .main{
+    width: $w;
+    height: rem(235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:rem(1) #ccc solid;
+    div:nth-child(1){
+      width: rem(165);
+      height: rem(165);
+      border:rem(1) #ccc solid;
+      margin-left:rem(40)
+    }
+    div:nth-child(2){
+      width: rem(465);
+      height: rem(165);
+      margin-right:rem(60);
+      h2{
+        font-size:rem(40);
+      }
+      p{
+        margin-top:rem(20);
+        font-size:rem(32);
+        position:relative;
+        a{
+          display: inline-block;
+          position:absolute;
+          right:0;
+          color:#00b38a;
+        }
+      }
+      span{
+        margin-top:rem(15);
+        font-size:rem(28);
+        color:#ccc;
+      }
+    }
+  }
+  .main:last-child{
+    margin-bottom: rem(85);
+  }
+}
+//我的去登录按钮
+.mine_body{
+  width: $w;
+  display: flex;
+  justify-content: center;
+  button{
+    margin-top:75%;
+    width: 90%;
+    height: rem(90);
+    border:none;
+    background: #00b38a;
+    color:#fff;
+    font-size:rem(30);
+  }
+}
+//我的 已登录样式
+.logged_body{
+  width: $w;
+  height:$w;
+  padding-top: rem(200);
+  div:nth-child(1){
+    width: $w;
+    height: rem(260);
+    text-align: center;
+    img{
+      margin:0 auto;
+      width: rem(200);
+      height: rem(200);
+    }
+    p{
+      font-size:rem(45);
+    }
+  }
+  div:nth-child(2){
+    width: $w;
+    height: rem(180);
+    margin-top:rem(150);
+    button{
+      margin-left:rem(40);
+      width: rem(300);
+      height: $w;
+      border:none;
+      background: #00b38a;
+      color:#fff;font-size:rem(40);
+    }
+  }
+  div:nth-child(3){
+    width: $w;
+    height: rem(120);
+    margin-top:rem(80);
+    button{
+      width: 95%;
+      height: $w;
+      margin-left:rem(20);
+      border:none;
+      background: red;
+      color:#fff;font-size:rem(40);
+    }
+  }
+}
+//公司详情的数据
+.com-detail_body{
+  width: $w;
+  .main {
+    width: $w;
+    .content {
+      width: $w;
+      height: rem(240);
+      display: flex;
+      align-items: center;
+      p:nth-child(1) {
+        width: rem(200);
+        height: rem(200);
+        margin-left: rem(30);
+      }
+      p:nth-child(2) {
+        margin-left: rem(20);
+        span {
+          font-size: rem(40);
+        }
+        span:nth-child(2) {
+          margin-top: rem(10);
+        }
+      }
+    }
+    .classify {
+      width: $w;
+      height: rem(350);
+      margin-top: rem(30);
+      h2 {
+        font-size: rem(60);
+        margin-left: rem(20);
+      }
+      button {
+        width: rem(140);
+        height: rem(70);
+        border: none;
+        border-radius: rem(10);
+        margin-top: rem(20);
+        margin-left: rem(20);
+        color: #00b38a;
+        font-size: rem(30);
+      }
+      div {
+        margin-top: rem(20);
+        margin-left: rem(20);
+        font-size: rem(40);
+      }
+    }
+    .com-login {
+      width: $w;
+      margin-top: rem(100);
+      button{;
+        width: $w;
+        height: rem(120);
+        border:none;
+        background: #00b38a;
+        color:#fff;
+        font-size:rem(30);
+      }
+    }
+  }
+}
+//职位详情的数据
+.post-detail_body{
+  width: $w;
+  .main{
+    width: $w;
+    div:nth-child(1){
+      width: $w;
+      height: rem(210);
+      border:rem(1) #ccc solid;
+      p{
+        height: 30%;
+        margin-left:rem(20);
+        font-size:rem(40);
+        line-height: rem(70);
+        span{
+          display: inline-block;
+          color:red;
+          margin-left:rem(15);
+        }
+      }
+    }
+    div:nth-child(2){
+      width: $w;
+      height: rem(240);
+      display: flex;
+      align-items: center;
+      p:nth-child(1){
+        width: rem(200);
+        height: rem(200);
+        margin-left: rem(30);
+      }
+      p:nth-child(2){
+        margin-left: rem(20);
+        span{
+          font-size:rem(40);
+        }
+        span:nth-child(2){
+          margin-top:rem(10);
+        }
+      }
+    }
+    div:nth-child(3) {
+      margin-top:rem(40);
+      margin-left:rem(20);
+      font-size:rem(40);
+    }
+    div:nth-child(4){
+      width: $w;
+      margin-top: rem(100);
+      button{;
+        width: $w;
+        height: rem(120);
+        border:none;
+        background: #00b38a;
+        color:#fff;
+        font-size:rem(30);
+      }
+    }
+  }
+}
+//遮罩和内容，搜索页面
+.search{
+  width: $w;
+  position: relative;
+}
+.shade{
+  width: $w;
+  height: $w;
+  .zhe{
+    width: $w;
+    height: $w;
+    position: absolute;
+    top:0;left:0;
+    background: rgba(0,0,0,0.2);
+  }
+  .cont{
+    width: $w;
+    position: fixed;
+    bottom:rem(85);left:0;
+    background: #fff;
+    z-index: 999;
+    li,p{
+      width: $w;
+      height: rem(100);
+      text-align: center;
+      line-height: rem(100);
+      border-bottom: rem(1) #ccc solid;
+    }
+  }
+}
+//自己的动画
+//.loding{
+//  width: $w;
+//  height: $w;
+//  background: rgba(0,0,0,0.2);
+//  position:absolute;
+//  top:0;left:0;
+//  .dong{
+//    width: rem(250);
+//    height: rem(50);
+//    text-align: center;
+//    z-index: 99;
+//    margin:0 auto;
+//    margin-top: 80%;
+//    display: flex;
+//    justify-content: space-between;
+//    align-items: center;
+//    .li{
+//      width: rem(30);
+//      height:rem(10);
+//      background: #00b38a;
+//      border-radius: rem(10);
+//    }
+//  }
+//}

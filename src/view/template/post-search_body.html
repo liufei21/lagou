@@ -1,0 +1,13 @@
+<!--职位列表，搜索页面的主要内容渲染数据部分自定义指令-->
+<div class="post-search_body">                  <!--过滤器  参数-->
+    <div class="main" ng-repeat="item in arr |filterList:$root.obj" ui-sref="postdetail({id :item.id})">
+        <div>
+            <img ng-src="{{item.imageUrl}}">
+        </div>
+        <div>
+            <h2 ng-bind="item.companyName"></h2>
+            <p >{{item.job}}[{{item.cityName}}]<a href="javascript:;" ng-bind="item.salaryName"></a></p>
+            <span ng-bind="item.date"></span>
+        </div>
+    </div>
+</div>

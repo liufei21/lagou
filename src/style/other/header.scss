@@ -1,0 +1,112 @@
+//职位列表的头部
+.example_head{
+  width: $w;
+  header{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: $w;
+    height:rem(85);
+    background:#00b38a;
+    font-size:rem(32);
+    color:#fff;
+    text-align: center;
+    line-height: rem(85);
+  }
+  .head_xia{
+    margin-top:rem(85);
+    width: $w;
+    height: rem(140);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:rem(1) #ccc solid;
+    p{
+      margin-left: rem(40);
+      font-size:rem(28);
+    }
+    button{
+      height: rem(60);
+      margin-right: rem(70);
+      color:#00b38a;
+      font-size:rem(30);
+      border:none;
+      border-radius: rem(10);
+    }
+  }
+}
+//搜索的头部
+.search_head {
+    width: $w;
+    header {
+      width: $w;
+      height: rem(85);
+      background: #00b38a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      a {
+        color: #fff;
+        font-size: rem(32);
+      }
+      a:nth-of-type(1) {
+        margin-left: rem(40);
+      }
+      a:nth-of-type(2) {
+        margin-right: rem(30);
+      }
+      input {
+        width: rem(460);
+        height: rem(55);
+        border-radius: rem(10);
+        border: none;
+        font-size: rem(30);
+        padding-left: rem(30);
+      }
+    }
+}
+//搜索和投递简历头部样式
+.search_send{
+  width: $w;
+  height: rem(140);
+  border-bottom: rem(1) #ccc solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p{
+    width: 33.33333%;
+    height: $w;
+    text-align: center;
+    line-height: rem(140);
+    font-size:rem(34);
+    &:hover{
+      border-bottom: rem(3) #00b38a solid;
+    }
+  }
+}
+//所有公用头部样式
+.head{
+  width: $w;
+  header{
+    width: $w;
+    height: rem(85);
+    background: #00b38a;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    color:#fff;
+    span{
+      font-size:rem(60);
+      margin-left:rem(20);
+    }
+    p{
+      font-size:rem(40);
+    }
+    b{
+      color:#fff;
+      font-size: rem(40);
+      font-weight: normal;
+      margin-right: rem(30);
+    }
+  }
+}
